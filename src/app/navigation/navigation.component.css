@@ -1,0 +1,154 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.logo{
+    height: 20%;
+    display: flex;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.logo p{
+    font-size: 1.5rem;
+}
+
+#pick{
+    color: skyblue;
+    margin: 5px;
+}
+
+#cloth{
+    color: lightgreen;
+    margin: 5px;
+}
+
+.navigation{
+    height: calc(100% - 15vh);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 15px;
+}
+
+.navigation .bars{
+    display: flex;
+    color: #333;
+    align-items: center;
+    padding: calc(20px - 10px);
+    gap: 20px;
+    border-radius: 10px;
+}
+
+
+.bars i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.bars div{
+    font-size: 1.2rem;
+}
+
+.bars:hover{
+    
+    background-color: skyblue;
+    div{
+        color: white;
+    }
+        
+    i{
+        background-color: white;
+        color: skyblue;
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:900px){
+
+
+
+    .bars{
+        justify-content: center;
+    }
+
+    .bars div{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .logo{
+        justify-content: center;
+    }
+
+    .navigation{
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+        padding: 0px;
+    }
+
+    .navigation .bars{
+        padding: 5px;
+        gap: 0px;
+    }
+
+    .navigation .bars i{
+        display: none;
+    }
+
+    .navigation .bars div{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    
+
+    .logo{
+        justify-content: center;
+    }
+
+    .navigation{
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+        padding: 0px;
+    }
+
+    .navigation .bars{
+        padding: 5px;
+        
+    }
+
+    .navigation .bars i{
+        font-size: 1.5rem;
+        padding: 3px;
+        display: block;
+    }
+
+    .bars div{
+        display: none;
+    }
+
+    
+}
+
+
+@media screen and (max-width:350px){
+    .navigation .bars i{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
